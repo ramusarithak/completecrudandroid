@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/admin" />
+
+
+
+    <!--edit Text-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@android:color/holo_orange_light"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+
+            android:drawableRight="@drawable/email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+   <!--password field-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordEditTextinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailTextinput"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+
+        android:textColorHint="@android:color/holo_purple"
+        android:layout_marginRight="32dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Register"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_alignEnd="@+id/passwordEditTextinput"
+        android:layout_below="@+id/passwordEditTextinput"
+        android:layout_alignRight="@+id/passwordEditTextinput" />
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="LOGIN"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/passwordEditTextinput"
+        android:layout_alignLeft="@+id/passwordEditTextinput"/>
+
+</RelativeLayout>
